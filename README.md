@@ -18,3 +18,8 @@ Support for Python 3 and 2. Also latest versions of django.
 [Read documentation for more info.](http://django-oidc-provider.readthedocs.org/)
 
 [Do you want to contribute? Please read this.](http://django-oidc-provider.readthedocs.io/en/latest/sections/contribute.html)
+
+## About the Nimbis Fork
+
+This fork removes MD5 code and replaces it with sha256.  It is a work in pogress.  
+Right now the version is called "0.7.0+nimbis.1"

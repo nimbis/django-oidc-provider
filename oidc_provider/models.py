@@ -264,4 +264,7 @@ class RSAKey(models.Model):
 
     @property
     def kid(self):
-        return u'{0}'.format(md5(self.key.encode('utf-8')).hexdigest() if self.key else '')
+        # original code with md5
+        # return u'{0}'.format(md5(self.key.encode('utf-8')).hexdigest() if self.key else '')
+        # Nimbis code with sha256
+        return u'{0}'.format(sha256(self.key.encode('utf-8')).hexdigest() if self.key else '')

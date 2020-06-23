@@ -200,7 +200,10 @@ class AuthorizeEndpoint(object):
                     redirect_uri_parsed.scheme, redirect_uri_parsed.netloc)
 
                 # Create random salt.
-                salt = md5(uuid4().hex.encode()).hexdigest()
+                # original salt code with md5
+                # salt = md5(uuid4().hex.encode()).hexdigest()
+                # Nimbis code with sha256
+                salt = sha256(uuid4().hex.encode()).hexdigest()
 
                 # The generation of suitable Session State values is based
                 # on a salted cryptographic hash of Client ID, origin URL,
