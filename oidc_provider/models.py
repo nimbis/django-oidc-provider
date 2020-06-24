@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import base64
 import binascii
-from hashlib import md5, sha256
+from hashlib import sha256
 import json
 
 from django.db import models

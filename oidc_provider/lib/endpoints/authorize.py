@@ -1,8 +1,5 @@
 from datetime import timedelta
-from hashlib import (
-    md5,
-    sha256,
-)
+from hashlib import sha256
 import logging
 try:
     from urllib import urlencode
